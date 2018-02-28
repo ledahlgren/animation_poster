@@ -1,0 +1,175 @@
+body,html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background: url(../images/background.jpg) fixed center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 65%;
+	position: relative;
+	z-index: -1;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: -1;
+}
+
+#info {
+	position: absolute;
+	width: 450px;
+	height: 50px;
+	top: 25px;
+	right:15px;
+	float: right;
+	color: rgba(255,255,255,0);
+	transition: 2s;
+	z-index: 3;
+}
+
+#info:hover {
+	color: rgba(255,255,255,1);
+	transition: 1s;
+}
+
+.knowledge {
+	position: absolute;
+	float: right;
+	right: 80px;
+	top: 0px;
+	text-align: left;
+	z-index: 5;
+}
+
+
+#location {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	float: right;
+	animation: pulse 3s ease alternate infinite;
+	z-index: 2;
+	transform-origin: 50% 50%;
+}
+
+@keyframes pulse {
+	0%, 100% {width: 30px;}
+	50% {width: 40px;}
+}
+
+#text {
+	width: 100%;
+	height: 100%;
+	background: url(../images/backgroundtext.jpg) fixed center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 65%;
+	opacity: 0;
+	animation: fade 1s ease;
+	animation-fill-mode: forwards;
+	animation-delay: 2s;
+	z-index: -1;
+}
+
+@keyframes fade {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+#description {
+	width: 1480px;
+	height: 288.66px;
+	position: fixed;
+	z-index: 1;
+	bottom: -45px;
+}
+
+.mask {
+	width: 0px;
+	height: 20px;
+	bottom: 110px;
+	left: 0px;
+	overflow: hidden;
+	position: absolute;
+	animation: reveal 2s forwards infinite alternate ease;
+	animation-delay: 1s;
+}
+
+@keyframes reveal {
+	0% { width: 0px; }
+	100% { width: 280px;}
+}
+
+.line {
+	width: 280px;
+	height: 4px;
+	color: white;
+	position: absolute;
+	z-index: 5;
+	border: none;
+	border-top: 4px dotted;
+}
+
+.mask2 {
+	width: 0px;
+	height: 20px;
+	bottom: 110px;
+	right: 0px;
+	overflow: hidden;
+	position: absolute;
+	animation: revealright 2s backwards infinite alternate ease;
+	animation-delay: 1s;
+}
+
+@keyframes revealright {
+	0% { width: 0px; }
+	100% { width: 280px; }
+}
+
+.line2 {
+	width: 260px;
+	height: 4px;
+	right: 0px;
+	color: white;
+	position: absolute;
+	z-index: 5;
+	border: none;
+	border-top: 4px dotted;
+}
+
+#lefttriangle {
+	width: 63px;
+	height: 74px;
+	position: absolute;
+	z-index: 6;
+	left: 308px;
+	top: 635px;
+}
+
+#righttriangle {
+	width: 63px;
+	height: 74px;
+	position: absolute;
+	z-index: 6;
+	left: 1090px;
+	top: 635px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
